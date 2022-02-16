@@ -110,7 +110,7 @@ phcp_impute = function(haps, ancient_tped, genetic_map, chr, genotyped = F, choo
 
 
 
-  ## calculate the gentic distance between each pair of following SNPs
+  ## calculate the genetic distance between each pair of following SNPs
   rho <- N*c(diff(data$genetic_distance[informative_snps]), Inf)
 
   #forward algorithm (with scaling)
@@ -152,7 +152,7 @@ phcp_impute = function(haps, ancient_tped, genetic_map, chr, genotyped = F, choo
 
   print("finish forward")
   print(Sys.time() - time)
-
+  #backward algorithm
   mutations_prob = array(dim = c(J,J,L))
   beta_hat <- ct[L]*matrix(1, nrow = J, ncol = J)
   genotype_prob = matrix(nrow = L, ncol  = 3)
