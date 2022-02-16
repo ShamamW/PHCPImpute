@@ -9,9 +9,10 @@ The package was built under R version 4.1.0 \
 To install the current packages, the devtools package should be installed. \
 Additional required packages for usage: dplyr. 
 ```
-#if devtools is not installed 
-install.packages("devtools")
-devtools::install_github(PHCPImpute)
+# If devtools is not installed
+install.packages("devtools") 
+devtools::install_github("ShamamW/PHCPImpute")
+library(PHCPImpute)
 #if dplyr is not installed
 install.packages("dplyr")
 ```
