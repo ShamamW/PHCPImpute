@@ -1,6 +1,6 @@
 # PHCPImpute
 
-R package for imputation of pseudo-haplotypes data, based on the PHCP algorithm. \
+An R package for imputation of pseudo-haplotypes data, based on the PHCP algorithm. \
 The main function takes a pseudo-haplotype target and a set of reference genomes and returns the posterior probabilities for the possible genotypes in each SNP.
 Full details described in ...
 
